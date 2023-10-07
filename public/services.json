@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "Event Registration",
+        "image": "https://i.ibb.co/LhJZP8N/service-1.jpg",
+        "price": "$10 per ticket",
+        "description": "Seamless event registration with options to purchase tickets and receive e-tickets."
+    },
+    {
+        "id": "2",
+        "name": "Live Streaming",
+        "image": "https://i.ibb.co/Wf7Jycg/service-2.jpg",
+        "price": "$500 per hour",
+        "description": "Live streaming services for tech and gaming events, providing remote access and interactive experiences."
+    },
+    {
+        "id": "3",
+        "name": "Event Promotion",
+        "image": "https://i.ibb.co/x2LmBXr/service-3.jpg",
+        "price": "$1,500 and up",
+        "description": "Promotional services for event organizers, including event listings, marketing campaigns, and sponsorships."
+    },
+    {
+        "id": "4",
+        "name": "Community Forums",
+        "image": "https://i.ibb.co/3YFKd07/service-4.jpg",
+        "price": "Free to Use",
+        "description": "Online platform for gamers and tech enthusiasts to discuss topics, share experiences, and seek advice."
+    },
+    {
+        "id": "5",
+        "name": "Content Creation",
+        "image": "https://i.ibb.co/h2ypY0z/service-5.jpg",
+        "price": "$2,000 and up",
+        "description": "Content creation services including video production, photography, and live reporting for tech and gaming events."
+    },
+    {
+        "id": "6",
+        "name": "Gaming Tournaments",
+        "image": "https://i.ibb.co/58LGNp5/service-6.jpg",
+        "price": "$25 per player",
+        "description": "Organized gaming tournaments, both online and offline, with registration, brackets, and live streaming."
+    }
+]
