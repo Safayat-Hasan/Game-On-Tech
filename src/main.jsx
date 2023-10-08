@@ -8,11 +8,13 @@ import {
 import Root from './main_components/Root/Root';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
+import ServiceDetail from './pages/ServiceDetail/ServiceDetail';
+import Register from './pages/Register/Register';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root/>,
+    element: <Root />,
     children: [
       {
         path: '/',
@@ -21,7 +23,16 @@ const router = createBrowserRouter([
       },
       {
         path: '/login',
-        element: <Login/>
+        element: <Login />
+      },
+      {
+        path: '/register',
+        element: <Register></Register>
+      },
+      {
+        path: '/services/:id',
+        element: <ServiceDetail></ServiceDetail>,
+        loader: () => fetch('/services.json')
       },
     ]
   },

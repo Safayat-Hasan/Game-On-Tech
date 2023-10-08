@@ -1,13 +1,12 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../../shared_components/Banner/Banner";
 import ServiceCard from "./ServiceCard";
-import Footer from "../../shared_components/Footer/Footer";
 
 
 
 const Home = () => {
     const services = useLoaderData();
-    console.log(services);
+    
     return (
         <div>
             <Banner></Banner>
@@ -84,8 +83,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <Footer></Footer>
+            </div>          
         </div>
     );
 };

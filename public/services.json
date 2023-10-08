@@ -1,44 +1,50 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "name": "Event Registration",
         "image": "https://i.ibb.co/LhJZP8N/service-1.jpg",
         "price": "$10 per ticket",
-        "description": "Seamless event registration with options to purchase tickets and receive e-tickets."
+        "description": "Seamless event registration with options to purchase tickets and receive e-tickets.",
+        "big_description": "Our Event Registration service is designed to make your journey to tech and gaming events as smooth as possible. When you use this service, you can expect a hassle-free registration process. You'll have the option to choose from a variety of event packages and purchase tickets online with ease. Once you've secured your spot, you'll receive e-tickets promptly, ensuring you're all set to attend and enjoy your selected events hassle-free."
     },
     {
-        "id": "2",
+        "id": 2,
         "name": "Live Streaming",
         "image": "https://i.ibb.co/Wf7Jycg/service-2.jpg",
         "price": "$500 per hour",
-        "description": "Live streaming services for tech and gaming events, providing remote access and interactive experiences."
+        "description": "Live streaming services for tech and gaming events, providing remote access and interactive experiences.",
+        "big_description": "Our Live Streaming service brings the excitement of tech and gaming events right to your screen. Whether you're unable to attend in person or prefer to enjoy events from the comfort of your home, our live streaming option has you covered. With custom pricing options, you'll have the flexibility to access real-time event coverage, interact with hosts and fellow viewers, and immerse yourself in the event experience, all without leaving your seat."
     },
     {
-        "id": "3",
+        "id": 3,
         "name": "Event Promotion",
         "image": "https://i.ibb.co/x2LmBXr/service-3.jpg",
         "price": "$1,500 and up",
-        "description": "Promotional services for event organizers, including event listings, marketing campaigns, and sponsorships."
+        "description": "Promotional services for event organizers, including event listings, marketing campaigns, and sponsorships.",
+        "big_description": "Elevate your event's visibility and reach with our Event Promotion service. Our experienced team offers custom pricing solutions tailored to your event's needs. We'll list your event on our platform, create effective marketing campaigns to generate buzz, and explore sponsorship opportunities to enhance your event's success. With our event promotion services, you can expect increased attendance and greater exposure for your tech and gaming events."
     },
     {
-        "id": "4",
+        "id": 4,
         "name": "Community Forums",
         "image": "https://i.ibb.co/3YFKd07/service-4.jpg",
         "price": "Free to Use",
-        "description": "Online platform for gamers and tech enthusiasts to discuss topics, share experiences, and seek advice."
+        "description": "Online platform for gamers and tech enthusiasts to discuss topics, share experiences, and seek advice.",
+        "big_description": "Our Community Forums provide a virtual space for tech and gaming enthusiasts to connect, share, and learn. Free to use for all, our forums are a hub for discussions on the latest tech trends, gaming strategies, and everything in between. Engage with a vibrant community of like-minded individuals, seek advice, share your experiences, and stay up-to-date with the most relevant conversations in the world of tech and gaming."
     },
     {
-        "id": "5",
+        "id": 5,
         "name": "Content Creation",
         "image": "https://i.ibb.co/h2ypY0z/service-5.jpg",
         "price": "$2,000 and up",
-        "description": "Content creation services including video production, photography, and live reporting for tech and gaming events."
+        "description": "Content creation services including video production, photography, and live reporting for tech and gaming events.",
+        "big_description": "Dive into the world of content creation with our specialized services. Our team offers a wide range of content production solutions, including video production, photography, and live reporting. Whether you need captivating event coverage, engaging product reviews, or stunning visuals, our content creation service has you covered. Prices vary based on the scope and complexity of your project."
     },
     {
-        "id": "6",
+        "id": 6,
         "name": "Gaming Tournaments",
         "image": "https://i.ibb.co/58LGNp5/service-6.jpg",
         "price": "$25 per player",
-        "description": "Organized gaming tournaments, both online and offline, with registration, brackets, and live streaming."
+        "description": "Organized gaming tournaments, both online and offline, with registration, brackets, and live streaming.",
+        "big_description": "Immerse yourself in the thrilling world of competitive gaming with our Gaming Tournaments service. Whether you're an aspiring pro gamer or a casual player, our organized tournaments cater to all skill levels. For a registration fee of $25 per player, you can enter the world of epic gaming battles, compete for prizes, and enjoy live streaming coverage. Get ready to put your gaming skills to the test!"
     }
 ]
