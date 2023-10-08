@@ -7,11 +7,11 @@ const HeaderUser = () => {
     const {user} = useContext(AuthContext);
 
     return (
-        <div>
+        <div className="text-end">
             <div>
-                <h3>User: {user.displayName}</h3>
-                <p>Email: {user.email}</p>
-                <img src={user.photoURL} alt="" />
+                <h3><span className="text-blue-600 text-2xl font-bold">{user.displayName}</span></h3>
+                {/* <p>Email: {user.email}</p> */}
+                <img className="rounded-full mb-10 mt-2 ml-auto w-16 h-16" src={user.photoURL} alt="" />
             </div>
         </div>
     );

@@ -10,7 +10,7 @@ const ServiceDetail = () => {
     const detail = details.find(det => det.id === idInt);
 
     return (
-        <div className="mt-14 md:mt-24 mb-24">
+        <div className="mt-12 mb-24">
             <h2 className="mb-10 text-center text-7xl text-blue-800">{detail.name}</h2>
             <img className="w-full" src={detail.image} alt="" />
             <p className="mt-10 text-2xl md:text-3xl font-bold">{detail.big_description}</p>

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { NavLink } from "react-router-dom";
+import {  NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import { AiFillGoogleCircle } from 'react-icons/ai';
@@ -8,7 +8,8 @@ import { AiFillGoogleCircle } from 'react-icons/ai';
 const Login = () => {
 
     const { logIn, signInWithGoogle } = useContext(AuthContext)
-    const [user, setUser] = useState(null);
+    const navigate = useNavigate();
+    const location = useLocation();
     const [logError, setLogError] = useState('');
 
     const handleLogin = e => {
@@ -23,8 +24,9 @@ const Login = () => {
 
         logIn(email, password)
             .then(result => {
-                setUser(result.user);
+                console.log(result.user);
                 toastMsg("Login Successful")
+                navigate(location?.state ? location.state : '/');
                 // navigate after login
                 // navigate(location?.state ? location.state : '/');
 
@@ -50,12 +52,6 @@ const Login = () => {
 
     return (
         <div>
-            {user && <div>
-                <h3>User: {user.displayName}</h3>
-                <p>Email: {user.email}</p>
-                <img src={user.photoURL} alt="" />
-            </div>
-            }
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">

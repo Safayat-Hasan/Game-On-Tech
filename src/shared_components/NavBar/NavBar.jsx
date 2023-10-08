@@ -33,7 +33,7 @@ const NavBar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-2xl text-blue-400 font-extrabold">GameOnTech</a>
+                <Link className="btn btn-ghost normal-case text-2xl text-blue-400 font-extrabold">GameOnTech</Link>
             </div>
             <div className="navbar-center hidden md:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -41,16 +41,9 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                {user ? 
-                <div className="flex items-center">
-                    <div className="flex flex-col mr-2">
-                        {/* <span>{user.email}</span> */}
-                        <p>{user.displayName}</p>
-                        <img className="rounded w-10 h-10" src={user.photoURL} alt="" />
-                    </div>                  
-                    <a onClick={handleLogout} className="btn btn-sm">Sign out</a>
-                </div> :
-                    <Link to="/login"><button onClick={handleLogout} className="btn btn-sm">Login</button></Link>
+                {user ?                
+                    <a onClick={handleLogout} className="btn btn-sm">Sign out</a>:
+                    <Link to="/login"><button className="btn btn-sm">Login</button></Link>
                 }
             </div>
         </div>

@@ -43,8 +43,8 @@ const Register = () => {
                 console.log(result.user)
                 toastMsg("Your account is created successfully")
                 updateProfile(result.user, {
-                    displayName: {name},
-                    photoURL: {image}
+                    displayName: name,
+                    photoURL: image
                 })
             })
             .catch(error => {
