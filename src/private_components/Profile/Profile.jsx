@@ -13,11 +13,11 @@ const Profile = () => {
                 <button className="bg-blue-200 p-3 rounded-xl font-bold">Change Photo</button>
             </div>
             <div className="mb-10">
-                <h2 className="mb-4 text-3xl text-blue-800 font-extrabold"><span className="text-black font-bold">User Name:</span> {user.displayName}</h2>
+                <h2 className="mb-4 text-xl md:text-3xl text-blue-800 font-extrabold"><span className="text-black font-bold">User Name:</span> {user.displayName}</h2>
                 <button className="bg-blue-200 p-3 rounded-xl font-bold">Change User Name</button>
             </div>
             <div className="mb-24">
-                <h2 className="mb-4 text-3xl text-blue-800 font-extrabold"><span className="text-black font-bold">Email Address:</span> {user.email}</h2>
+                <h2 className="mb-4 text-xl md:text-3xl text-blue-800 font-extrabold"><span className="text-black font-bold">Email Address:</span> {user.email}</h2>
                 <button className="bg-blue-200 p-3 rounded-xl font-bold">Change Email Address</button>
             </div>
         </div>
