@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>Here at first the greetign is declared by empty object. Then this object is displayed by the console in the code. So the comnsole shows {} and the correct ans is A.</i>
 
 </p>
 </details>
