@@ -1,11 +1,18 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../../shared_components/Banner/Banner";
 import ServiceCard from "./ServiceCard";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 
 const Home = () => {
     const services = useLoaderData();
+
+    useEffect(() => {
+        AOS.init(); // Initialize AOS
+      }, []);
     
     return (
         <div>
@@ -17,7 +24,7 @@ const Home = () => {
                 }
             </div>
             <div className="mt-16 mb-24 grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div className="col-span-1 md:col-span-2">
+                <div data-aos="zoom-in-right" data-aos-duration="1000" className="col-span-1 md:col-span-2">
                     <h3 className="text-4xl text-center text-blue-400 font-bold mb-4">Most Popular</h3>
                     <div className="card card-side bg-base-100 shadow-xl mb-4">
                         <figure><img src="https://i.ibb.co/SvsY2Kf/popular-1.jpg" alt="Movie" /></figure>
@@ -50,7 +57,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-1 md:col-span-2">
+                <div data-aos="zoom-in-left" data-aos-duration="1000" className="col-span-1 md:col-span-2">
                     <h3 className="text-4xl text-center text-blue-400 font-bold mb-4">Latest Technologies</h3>
                     <div className="card card-side bg-base-100 shadow-xl mb-4">
                         <figure><img src="https://i.ibb.co/X5RP7yt/latest-1.jpg" alt="Movie" /></figure>
