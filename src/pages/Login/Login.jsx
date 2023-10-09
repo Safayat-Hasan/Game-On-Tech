@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import {  NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
@@ -10,7 +10,7 @@ const Login = () => {
     const { logIn, signInWithGoogle } = useContext(AuthContext)
     const navigate = useNavigate();
     const location = useLocation();
-    const [logError, setLogError] = useState('');
+    // const [logError, setLogError] = useState('');
 
     const handleLogin = e => {
         e.preventDefault();
@@ -20,19 +20,19 @@ const Login = () => {
         const password = form.get('password');
         console.log(email, password);
 
-        setLogError('');
+        // setLogError('');
 
         logIn(email, password)
             .then(result => {
                 console.log(result.user);
                 toastMsg("Login Successful")
-                navigate(location?.state ? location.state : '/');
+                navigate(location?.state ? location.state : '/login');
                 // navigate after login
                 // navigate(location?.state ? location.state : '/');
-
             })
             .catch(error => {
-                setLogError(error.message);
+                console.log(error.message);
+                toastMsg("Invalid email or password")
             })
     }
 
@@ -78,9 +78,9 @@ const Login = () => {
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Login</button>
                             </div>
-                            {logError &&
+                            {/* {logError &&
                                 <p className="text-red-700">{logError}</p>
-                            }
+                            } */}
                             <div className="flex items-center">
                                 <AiFillGoogleCircle className="text-xl"></AiFillGoogleCircle>
                                 <p><button onClick={handleGoogleSignIn} className="btn btn-ghost">Google</button></p>
